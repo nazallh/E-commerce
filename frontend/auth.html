@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+
+    <!-- Navbar (same as home) -->
+    <nav class="navbar">
+        <div class="logo">🛍 NexCart</div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li>Shop</li>
+            <li>Cart</li>
+            <li>Login</li>
+        </ul>
+
+        <button class="signup-btn">Sign Up</button>
+    </nav>
+
+    <!-- Auth Container -->
+    <section class="auth-container">
+
+        <div class="auth-box">
+
+            <!-- Login -->
+            <div class="login-section">
+                <div class="auth-header login-header">Login</div>
+
+                <form id="login-form">
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" required>
+
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" required>
+
+                    <a href="#" class="forgot">Forgot Password?</a>
+
+                    <button type="submit" class="login-btn">Login</button>
+                </form>
+            </div>
+
+            <!-- Register -->
+            <div class="register-section">
+                <div class="auth-header register-header">Register</div>
+
+                <form id="register-form">
+                    <label>Name</label>
+                    <input type="text" placeholder="Name" required>
+
+                    <label>Email</label>
+                    <input type="email" placeholder="Email" required>
+
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" required>
+
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" required>
+
+                    <button type="submit" class="register-btn">Register</button>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+
+<script type="module" src="js/authApp.js"></script>
+</body>
+</html>

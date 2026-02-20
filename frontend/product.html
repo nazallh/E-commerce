@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+
+<div class="product-wrapper">
+
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🛍 NexCart</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#">Cart</a>
+        <a href="#">Login</a>
+    </nav>
+
+    <button class="signup-btn">Sign Up</button>
+</header>
+
+<!-- Back Button Under Navbar -->
+<div class="back-container">
+    <button class="back-btn" onclick="history.back()">← Back</button>
+</div>
+
+<div class="container"> 
+
+    <div class="product-wrapper">
+        <div class="product-card">
+
+            <div class="product-image">
+                <img id="productImage">
+            </div>
+
+            <div class="product-details">
+                <h2 id="productName"></h2>
+                <p class="price" id="productPrice"></p>
+                <p class="description" id="productDescription"></p>
+
+                <div class="quantity">
+                    <label>Quantity:</label>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+
+                <div class="buttons">
+                    <button class="add-cart">Add to Cart</button>
+                    <button class="buy-now">Buy Now</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script type="module" src="js/product.js"></script>
+<script>
+function goBackToShop() {
+    window.location.href = "shop.html";
+}
+</script>
+
+</body>
+</html>
